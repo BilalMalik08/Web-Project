@@ -1,0 +1,157 @@
+.foodMenu-row1 {
+    height: 10vh;
+    color: white;
+    cursor: default;
+}
+
+.foodMenu-row2 {
+    height: 73vh;
+    padding-bottom: 8px;
+}
+
+.food-item-col {
+    height: 73vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.food-item-col::-webkit-scrollbar {
+    display: none;
+}
+
+.food-item-container {
+    flex-direction: column;
+}
+
+.food-item-card {
+    border: 2px solid white;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.food-item-img {
+    height: 100%;
+    width: 100%;
+}
+
+.food-item-card-title {
+    text-align: start;
+    color: white;
+}
+
+.food-item-card-text {
+    text-align: start;
+    font-weight: 300;
+    color: white;
+}
+
+.food-item-right-img {
+    height: 400px;
+    width: 500px;
+    transition: 1s ease-in-out;
+}
+
+
+.food-item-right-img:hover {
+    height: 500px;
+    width: 650px;
+}
+
+.foodMenu-row3 {
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+}
+
+.menu-not-found {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+}
+
+.button-select-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.selectOptions {
+    margin-left: 15px;
+    height: 37px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.quantity {
+    margin-left: 15px;
+    height: 37px;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.quantity::placeholder {
+    color: black;
+    text-align: center;
+}
+
+.admin-food-item-card {
+    height: 27vh;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.admin-food-item-img {
+    height: 26.5vh;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .foodMenu-row2 {
+        height: 110vh;
+        padding-bottom: 0px;
+    }
+
+    .foodMenu-row2 .col {
+        flex: unset;
+    }
+
+    .food-item-right-img {
+        height: 350px;
+        width: 460px;
+    }
+
+    .food-item-right-img:hover {
+        height: 350px;
+        width: 460px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .food-item-right-img {
+        height: 250px;
+        width: 365px;
+    }
+
+    .food-item-right-img:hover {
+        height: 250px;
+        width: 365px;
+    }
+
+
+
+    .foodMenu-row2 {
+        height: 110vh;
+    }
+}

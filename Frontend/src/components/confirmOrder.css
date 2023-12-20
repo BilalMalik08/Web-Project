@@ -1,0 +1,66 @@
+.confirmOrder-row1 {
+    height: 10vh;
+    color: white;
+    text-align: center;
+    cursor: default;
+}
+
+.confirmOrder-row2 {
+    height: 73vh;
+    padding-top: 3%;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    50% {
+        transform: translateX(200px);
+
+    }
+
+    100% {
+        transform: translateX(-200px);
+    }
+}
+
+.confirmOrder-row2 img {
+    animation: moveImage 3s ease infinite;
+}
+
+.confirmOrder-row3 {
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: default;
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+    .confirmOrder-row2 {
+        height: 80vh;
+    }
+
+    .confirmOrder-row2 .col {
+        flex: unset;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .confirmOrder-row2 {
+        height: 130vh;
+    }
+
+    .confirmOrder-row2 img {
+        height: 200px;
+        width: 200px;
+        animation: unset;
+    }
+}
