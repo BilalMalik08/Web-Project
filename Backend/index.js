@@ -17,19 +17,11 @@ const port = process.env.PORT || 4000;
 dotenv.config();
 
 // Middleware setup
-const allowedOrigins = ["https://web-project-app-blush.vercel.app"];
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
-
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: "https://web-project-app-blush.vercel.app",
+  })
+);
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
