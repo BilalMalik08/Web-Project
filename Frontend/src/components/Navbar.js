@@ -20,12 +20,12 @@ function Navbar() {
   const location = useLocation();
 
   const allowedRoutes = [
-    "/dashboard",
-    "/adminmenu",
-    "/orders",
-    "/customers",
-    "/settings",
-    "/feedbacks",
+    `${apiURL}/dashboard`,
+    `${apiURL}/adminmenu`,
+    `${apiURL}/orders`,
+    `${apiURL}/customers`,
+    `${apiURL}/settings`,
+    `${apiURL}/feedbacks`,
   ];
   const isDashboardRoute = allowedRoutes.includes(location.pathname);
   const navbarClass = isDashboardRoute ? "white-navbar" : "black-navbar";
