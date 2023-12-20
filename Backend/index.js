@@ -19,7 +19,7 @@ dotenv.config();
 // Middleware setup
 app.use(
   cors({
-    origin: "https://web-project-app-blush.vercel.app",
+    origin: "http://localhost:3000",
   })
 );
 app.use(bodyParser.json({ extended: true }));
