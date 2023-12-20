@@ -1,3 +1,3 @@
-const apiURL = "http://localhost:4000";
+const apiURL = "https://web-project-api.vercel.app";
 
 export default apiURL;
